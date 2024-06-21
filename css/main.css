@@ -11,21 +11,58 @@ nav {
   color: #7C6A0A;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 16px;
 }
 nav p {
   font-weight: 400;
-  line-height: 39px;
+  line-height: 40px;
   font-size: 1.5em;
   padding-left: 30px;
 }
 nav .icons {
   display: flex;
-  gap: 15px;
+  gap: 16px;
 }
 nav .icons button {
   background: none;
   border-style: none;
+}
+
+article {
+  width: auto;
+  padding: 76px 70px 0 70px;
+  color: #7C6A0A;
+  display: flex;
+  justify-content: space-between;
+}
+article .impact-section {
+  width: 50%;
+}
+article .impact-section h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 78px;
+  margin-bottom: 60px;
+}
+article .impact-section p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
+article .impact-section button {
+  border-radius: 36px;
+  background-color: #FA9500;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 30px;
+  color: #FFEFE7;
+  padding: 0.5rem 2.5rem;
+  border: none;
+}
+article .image-section img {
+  max-width: 550px;
+  border-radius: 20px;
 }
 
 footer {
