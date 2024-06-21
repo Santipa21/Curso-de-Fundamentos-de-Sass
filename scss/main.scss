@@ -18,7 +18,7 @@ nav{
     color: $primary-text-color;
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding:  34px 86px 0 86px;
     p{
         font-weight: 400;
         line-height: 40px;
@@ -67,8 +67,36 @@ article{
     }
     .image-section{
         img{
-            max-width: 550px;
+            max-width: 400px;
             border-radius: 20px;
+        }
+    }
+}
+section{
+    width: 100%;
+    height: auto;
+    background-color: $primary-color;
+    padding: 100px 74px 0;
+    h2{
+        color: $primary-text-color;
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 66px;
+    }
+    .healthcare{
+        .product-card{
+            color: $primary-text-color;
+            padding: 20px;
+            border-radius: 8px;
+            width: 324px;
+            height: auto;
+            background-color: $secondary-color;
+            img{
+                width: 250px;
+                height: 300px;
+                background-image: cover;
+                border-radius: 10px;
+            }
         }
     }
 }
