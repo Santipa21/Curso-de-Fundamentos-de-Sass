@@ -73,7 +73,7 @@ article{
     }
 }
 section{
-    width: 100%;
+    width: auto;
     height: auto;
     background-color: $primary-color;
     padding: 100px 74px 0;
@@ -84,19 +84,54 @@ section{
         line-height: 66px;
     }
     .healthcare{
+        padding-bottom: 60px;
+        .card-section{
+            display: flex;
+            width: auto;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            column-gap: 200px;
+            row-gap: 80px;
+            flex-wrap: wrap;
+        }
         .product-card{
             color: $primary-text-color;
             padding: 20px;
             border-radius: 8px;
-            width: 324px;
-            height: auto;
+            width: 14vw;
+            height: 45vh;
             background-color: $secondary-color;
-            img{
-                width: 250px;
-                height: 300px;
-                background-image: cover;
-                border-radius: 10px;
+            .icon{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 12px;
+                svg{
+                    width: 28px;
+                    height: 28px;
+                }
             }
+            .product-image{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 12vw;
+                    height: 30vh;
+                    object-fit: cover;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+    .furniture{
+        @extend .healthcare;
+        .product-card{
+            color: $primary-color;
+            background-color: $tertiary-color;
         }
     }
 }
