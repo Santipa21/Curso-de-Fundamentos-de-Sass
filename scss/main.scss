@@ -143,6 +143,32 @@ section{
         }
     }
 }
+.about-us{
+    padding-bottom: 60px;
+    h2{
+        padding-bottom: 60px;
+        font-weight: bold;
+    }
+    .mission-section{
+        @include flexCenter(row, space-evenly, center);
+        .earth{
+            display: flex;
+            gap: 40px;
+            width: 30vw;
+            color: $dark-orange;
+            img{
+                object-fit: contain;
+            }
+            p{
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+        .innovation{
+            @extend .earth;
+        }
+    }
+}
 footer{
     background-color: $soft-orange;
     width: 100%;

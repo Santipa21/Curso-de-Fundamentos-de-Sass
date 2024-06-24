@@ -136,6 +136,33 @@ section .furniture .product-card {
   background-color: #BABD8D;
 }
 
+.about-us {
+  padding-bottom: 60px;
+}
+.about-us h2 {
+  padding-bottom: 60px;
+  font-weight: bold;
+}
+.about-us .mission-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-us .mission-section .earth, .about-us .mission-section .innovation {
+  display: flex;
+  gap: 40px;
+  width: 30vw;
+  color: #E86424;
+}
+.about-us .mission-section .earth img, .about-us .mission-section .innovation img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-us .mission-section .earth p, .about-us .mission-section .innovation p {
+  text-align: center;
+  font-size: 24px;
+}
 footer {
   background-color: #FA9500;
   width: 100%;
