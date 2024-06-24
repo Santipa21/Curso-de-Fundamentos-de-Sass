@@ -6,6 +6,20 @@ $dark-orange:#E86424;
 $soft-orange:#FA9500;
 $font-ibm: "IBM Plex Sans", sans-serif;
 
+@mixin flexCenter($direction, $content, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@mixin buttonStyle {
+    button{
+        background: none;
+        border-style: none;
+    }
+}
+
 body{
    margin: 0;
    padding: 0;
@@ -16,8 +30,7 @@ nav{
     width: auto;
     height: 100px;
     color: $primary-text-color;
-    display: flex;
-    justify-content: space-between;
+   @include flexCenter(row, space-between, center );
     padding:  34px 86px 0 86px;
     p{
         font-weight: 400;
@@ -28,18 +41,14 @@ nav{
     .icons{
         display: flex;
         gap: 16px;
-        button{
-            background:none;
-            border-style: none;
-        }
+        @include buttonStyle();
     }
 }
 article{
     width: auto;
     padding: 76px 70px 0 70px;
     color: $primary-text-color;
-    display: flex;
-    justify-content: space-between;
+   @include flexCenter(row, space-between, center );
     .impact-section{
         width: 50%;
         h1{
@@ -54,6 +63,7 @@ article{
                line-height: 32px; 
             margin-bottom: 60px;
         }
+        @include buttonStyle();
         button{
             border-radius: 36px;
             background-color: $soft-orange;
@@ -62,7 +72,7 @@ article{
             line-height: 30px;
             color: $primary-color;
             padding: .5rem 2.5rem;
-            border: none;
+           
         }
     }
     .image-section{
@@ -86,11 +96,9 @@ section{
     .healthcare{
         padding-bottom: 60px;
         .card-section{
-            display: flex;
+            @include flexCenter(row, space-evenly, center);
             width: auto;
             height: auto;
-            justify-content: center;
-            align-items: center;
             column-gap: 200px;
             row-gap: 80px;
             flex-wrap: wrap;
