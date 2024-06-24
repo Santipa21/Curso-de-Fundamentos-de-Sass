@@ -67,6 +67,9 @@ article .impact-section button {
   color: #FFEFE7;
   padding: 0.5rem 2.5rem;
 }
+article .impact-section button:hover {
+  transform: scale(1.1);
+}
 article .image-section img {
   max-width: 400px;
   border-radius: 20px;
@@ -163,6 +166,29 @@ section .furniture .product-card {
   text-align: center;
   font-size: 24px;
 }
+.gallery h2 {
+  padding-bottom: 60px;
+  font-weight: bold;
+}
+.gallery .gallery-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery-images img {
+  width: 28vw;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  -o-object-position: 5px 35%;
+     object-position: 5px 35%;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
+}
+
 footer {
   background-color: #FA9500;
   width: 100%;

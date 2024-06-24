@@ -72,7 +72,9 @@ article{
             line-height: 30px;
             color: $primary-color;
             padding: .5rem 2.5rem;
-           
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
     .image-section{
@@ -166,6 +168,25 @@ section{
         }
         .innovation{
             @extend .earth;
+        }
+    }
+}
+.gallery{
+    h2{
+        padding-bottom: 60px;
+        font-weight: bold;
+    }
+    .gallery-images{
+        @include flexCenter(row, space-between, center);
+        img{
+            width: 28vw;
+            height: 45vh;
+            object-fit: cover;
+            border-radius: 16px;
+            object-position: 5px 35%;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 }
